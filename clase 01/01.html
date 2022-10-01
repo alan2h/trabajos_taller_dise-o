@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estaticos/estilo.css">
+</head>
+<body>
+    <header>
+      <h1>web</h1>
+      <nav>
+        
+      </nav>  
+    </header>
+    <aside>
+        <h6 id="id_column_monday" class="" name=""  >desde el body</h6>
+        <p id="subtitulo" >esto es un parrafo</p>
+         <input id="text_ingreso" type="text" placeholder="ingrese solo dos caracteres">
+         <p class="msg_error">Error en texto</p>
+        <button onclick="guardar()" type="button"> guardar</button>
+        </aside>
+    <footer>
+        pie pagina
+    </footer>
+    <script>
+        function guardar(){
+            let prueba= document.getElementById('text_ingreso').value;
+            if (prueba == 'a'){
+                document.getElementById('text_ingreso').classList.add('input_error');
+            }
+        }
+    </script>
+</body>
+</html>

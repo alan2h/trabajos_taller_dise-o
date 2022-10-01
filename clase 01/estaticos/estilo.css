@@ -1,0 +1,12 @@
+#subtitulo, h1 {
+    color: rgb(192, 144, 237);
+ }
+
+ .msg_error{
+    color: red;
+    display: none;
+ }
+
+ .input_error {
+   border-color: red; 
+ }
